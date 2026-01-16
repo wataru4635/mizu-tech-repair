@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.section-title {
+  color: #1E1E1E;
+  font-family: var(--font-family-base);
+  font-size: 30px;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.5;
+  letter-spacing: calc(-0.66 / 30 * 1em);
+  text-align: center;
+}

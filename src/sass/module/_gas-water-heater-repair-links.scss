@@ -1,0 +1,76 @@
+@use "global" as *;
+
+.gas-water-heater-repair-links {
+  background: var(--main-color);
+  padding-block: 20px;
+
+  @media (max-width: 767px) {
+    padding-block: 20px;
+  }
+}
+
+.gas-water-heater-repair-links__btn-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gas-water-heater-repair-links__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 5px 11.53px;
+  width: 500px;
+  height: 55px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: transform var(--duration-base) ease, box-shadow var(--duration-base) ease;
+  @media (max-width: 767px) {
+    width: 100%;
+    max-width: 500px;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      box-shadow: none;
+      transform: translateY(2px);
+    }
+  }
+}
+
+.gas-water-heater-repair-links__btn--diagnosis {
+  background-color: #F29602;
+}
+
+.gas-water-heater-repair-links__btn--line {
+  background-color: #06C655;
+}
+
+.gas-water-heater-repair-links__icon {
+  font-family: "Material Symbols Rounded", sans-serif;
+  font-variation-settings: "FILL" 1;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+
+.gas-water-heater-repair-links__line-icon {
+  display: block;
+  width: 28px;
+  height: 27px;
+  flex-shrink: 0;
+}
+
+.gas-water-heater-repair-links__text {
+  font-family: var(--font-family-second);
+  font-weight: var(--font-weight-bold);
+  font-size: 16px;
+  line-height: 0.908;
+  color: #FFFFFF;
+  text-align: center;
+}

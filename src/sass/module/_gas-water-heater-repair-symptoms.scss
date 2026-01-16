@@ -1,0 +1,159 @@
+@use "global"as *;
+
+.gas-water-heater-repair-symptoms {
+  padding-block: 60px;
+}
+
+.gas-water-heater-repair-symptoms__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 31px 25px;
+  margin-top: 20px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gas-water-heater-repair-symptoms__item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.gas-water-heater-repair-symptoms__item--01 .gas-water-heater-repair-symptoms__img-wrap,
+.gas-water-heater-repair-symptoms__item--03 .gas-water-heater-repair-symptoms__img-wrap,
+.gas-water-heater-repair-symptoms__item--04 .gas-water-heater-repair-symptoms__img-wrap {
+  width: 82%;
+}
+
+.gas-water-heater-repair-symptoms__img {
+  height: auto;
+  object-fit: contain;
+}
+
+.gas-water-heater-repair-symptoms__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  background-color: var(--white);
+  border: 1px solid var(--main-color-light);
+  border-radius: 10px;
+  padding: 14px 11px;
+  margin-top: 0;
+}
+
+.gas-water-heater-repair-symptoms__label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color-light);
+  border-radius: 14px;
+  padding: 2px 10px;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--white);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: calc(-0.176 / 16 * 1em);
+  width: fit-content;
+  height: 28px;
+}
+
+.gas-water-heater-repair-symptoms__cause-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+.gas-water-heater-repair-symptoms__cause-item {
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+  color: #000000;
+  text-indent: -1em;
+  padding-left: 1em;
+
+  &::before {
+    content: "・";
+  }
+}
+
+.gas-water-heater-repair-symptoms__risk {
+  display: flex;
+  gap: 3px;
+  margin-top: 8px;
+}
+
+.star {
+  width: 24px;
+  height: 24px;
+  background-color: #D9D9D9;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  flex-shrink: 0;
+}
+
+.star-red {
+  background-color: #FF320E;
+}
+
+.gas-water-heater-repair-symptoms__check-list {
+  display: flex;
+  flex-direction: column;
+margin-top: 8px;
+}
+
+.gas-water-heater-repair-symptoms__check-item {
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+  color: #000000;
+  text-indent: -1em;
+  padding-left: 1em;
+
+  &::before {
+    content: "・";
+  }
+}
+
+.gas-water-heater-repair-symptoms__link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4.95px;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+  color: #0474D3;
+  padding: 9px 10px 0 0;
+  margin-top: auto;
+  position: relative;
+  transition: opacity var(--duration-base) ease;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 17.73px;
+    aspect-ratio: 18/13;
+    background: url('../images/gas-water-heater-repair/double-arrow.webp') no-repeat center center / contain;
+    transition: transform var(--duration-base) ease;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: 0.7;
+      &::after {
+        transform: translateX(5px);
+      }
+    }
+  }
+}

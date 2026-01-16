@@ -1,0 +1,146 @@
+@use "global" as *;
+
+.gas-water-heater-repair-cost {
+  padding-block: 80px;
+  background: #F1F9FF;
+}
+
+.gas-water-heater-repair-cost__table-wrap {
+  margin-top: 30px;
+}
+
+.gas-water-heater-repair-cost__table {
+  width: 1000px;
+  max-width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--main-color-light);
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.gas-water-heater-repair-cost__label {
+  width: 250px;
+  height: 60px;
+  background-color: var(--bg-light-blue);
+  border-right: 1px solid var(--main-color-light);
+  border-bottom: 1px solid var(--main-color-light);
+  padding: 15px 22px;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+  color: var(--black);
+  vertical-align: middle;
+
+  @media (max-width: 767px) {
+    width: auto;
+    min-width: 120px;
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}
+
+.gas-water-heater-repair-cost__price {
+  width: 750px;
+  height: 60px;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--main-color-light);
+  padding: 19px 11px;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+  color: rgba(0, 0, 0, 0.8);
+  vertical-align: middle;
+
+  @media (max-width: 767px) {
+    width: auto;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.gas-water-heater-repair-cost__info {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.gas-water-heater-repair-cost__card {
+  width: 488.68px;
+  max-width: 100%;
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.gas-water-heater-repair-cost__card-header {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--main-color-light);
+  border-radius: 16px 16px 0 0;
+  padding: 10px 18.44px;
+  }
+
+.gas-water-heater-repair-cost__card-icon {
+  width: 30px;
+  aspect-ratio: 1/1;
+}
+
+.gas-water-heater-repair-cost__card-icon-img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.gas-water-heater-repair-cost__card-heading {
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+  color: var(--white);
+}
+
+.gas-water-heater-repair-cost__card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px 28.16px 7px 28.16px;
+}
+
+.gas-water-heater-repair-cost__card-item {
+  position: relative;
+  padding-left: 24.48px;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-normal);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+  color: rgba(0, 0, 0, 0.90);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 17px;
+    height: 16px;
+    background: url('../images/gas-water-heater-repair/icon-check.webp') no-repeat center center / contain;
+  }
+}

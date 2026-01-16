@@ -1,0 +1,163 @@
+@use "global" as *;
+
+.gas-water-heater-repair-replace-compare {
+  background-color: var(--white);
+  padding-block: 60px;
+}
+
+.gas-water-heater-repair-replace-compare__table-wrap {
+  margin-top: 30px;
+}
+
+.gas-water-heater-repair-replace-compare__table {
+  width: 1000px;
+  max-width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--main-color-light);
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.gas-water-heater-repair-replace-compare__header {
+  height: 60px;
+  background-color: var(--main-color);
+  border: 2px solid var(--main-color-light);
+  padding: 15px 22px;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+  color: var(--white);
+  vertical-align: middle;
+  text-align: left;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}
+
+.gas-water-heater-repair-replace-compare__header--item {
+  width: 250px;
+  border-right: 1px solid var(--main-color-light);
+  border-bottom: 1px solid var(--main-color-light);
+
+  @media (max-width: 767px) {
+    width: auto;
+    min-width: 120px;
+  }
+}
+
+.gas-water-heater-repair-replace-compare__header--repair {
+  width: 375px;
+  border-right: 1px solid var(--main-color-light);
+  border-bottom: 1px solid var(--main-color-light);
+
+  @media (max-width: 767px) {
+    width: auto;
+  }
+}
+
+.gas-water-heater-repair-replace-compare__header--replace {
+  width: 375px;
+  border-bottom: 1px solid var(--main-color-light);
+
+  @media (max-width: 767px) {
+    width: auto;
+  }
+}
+
+.gas-water-heater-repair-replace-compare__label {
+  width: 250px;
+  height: 60px;
+  background-color: var(--bg-light-blue);
+  border-bottom: 1px solid var(--main-color-light);
+  padding: 15px 22px;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+  color: var(--black);
+  vertical-align: middle;
+
+  @media (max-width: 767px) {
+    width: auto;
+    min-width: 120px;
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}
+
+.gas-water-heater-repair-replace-compare__cell {
+  width: 375px;
+  height: 60px;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--main-color-light);
+  padding: 19px 22px;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+  color: rgba(0, 0, 0, 0.8);
+  border-left: 1px solid var(--main-color-light);
+
+
+  @media (max-width: 767px) {
+    width: auto;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.gas-water-heater-repair-replace-compare__link {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.gas-water-heater-repair-replace-compare__link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 580px;
+  height: 69px;
+  padding: 14px 20px;
+  background-color: #F29602;
+  border-radius: 0;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-family-second);
+  font-weight: var(--font-weight-extrabold);
+  font-size: 17px;
+  line-height: 2.294;
+  letter-spacing: 0.05em;
+  color: var(--white);
+  text-decoration: none;
+  transition: transform var(--duration-base) ease, box-shadow var(--duration-base) ease;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      box-shadow: none;
+      transform: translateY(3px);
+    }
+  }
+}
+
+.gas-water-heater-repair-replace-compare__link-btn-icon {
+  font-family: "Material Symbols Rounded", sans-serif;
+  font-weight: var(--font-weight-normal);
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--white);
+}

@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.gas-water-heater-repair-fv {
+height: auto;
+width: 100%;
+@media (min-width: 768px) {
+  min-width: 1100px;
+}
+}
+
+.gas-water-heater-repair-fv__img {
+display: block;
+width: 100%;
+height: auto;
+object-fit: contain;
+}
