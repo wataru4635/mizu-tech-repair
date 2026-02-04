@@ -4,6 +4,22 @@
   padding-block: 60px;
 }
 
+.gas-water-heater-repair-symptoms__inner.inner {
+  @media (max-width: 767px) {
+  max-width: 100%;
+padding-inline: 0;
+  }
+}
+
+.gas-water-heater-repair-symptoms__list-wrap {
+  @media (max-width: 767px) {
+    overflow: auto;
+    max-width: 100%;
+    padding-inline: var(--padding-sp);
+    padding-bottom: 20px;
+  }
+}
+
 .gas-water-heater-repair-symptoms__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -11,7 +27,8 @@
   margin-top: 20px;
 
   @media (max-width: 767px) {
-    grid-template-columns: 1fr;
+    display: flex;
+    width: calc(320px * 6 + 25px * 5);
   }
 }
 
@@ -21,7 +38,8 @@
   height: 100%;
 
   @media (max-width: 767px) {
-    width: 100%;
+    min-width: 320px;
+    width: 320px;
   }
 }
 
